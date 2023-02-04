@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isle of Bombay - Now </title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2>Isle of Bombay - Now </h2>
+    <p>
+     
+     >> Formerly used as a hub of the British marina because of its strategic positioning in the Arabian Sea, the isle currently houses numerous historical places and landmarks. <br> 
+     >> Among these, the Banganga Tank, the Hanging Garden, and the Walkeshwar temple are some of the notable names. <br> 
+     >> This place is especially popular for regale boutiques, which you can buy as souvenirs.
+
+
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/Isleofbombaynow.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button"  onclick ="window.location.href ='home.html';" > Back to home >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>

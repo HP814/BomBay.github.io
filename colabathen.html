@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colaba-then</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2>Colaba - Then </h2>
+    <p>
+>>The name Colaba comes from Kolabhat, a word in the language of Kolis, the indigenous inhabitants of the islands, before the arrival of the Portuguese. <br>
+>>Around 300 years ago, Colaba was little more than swampy land, shifting sea and two uninviting islands — Old Woman’s Island and Colaba Island. <br>
+>>By the time Twain visited the city, the island (Colaba and Old Woman’s Island had become one at some point) had fused with the rest of the city and was just stirring from its millennia-long slumber. <br>
+>>It offered little to tourists and seekers of the exotic, who were far too busy befriending bejewelled maharajas to bother with the howling jackals and cut-throat bandits that roamed this corner. <br>
+>>Till 1838, the journey between Bombay on one side and Old Woman’s Island and Colaba on the other involved a smelly, rickety ferry. It was only when the causeway was built to link Colaba with the rest of the city that its fortunes and property prices looked up. <br>
+>>Merchants and factory owners decided that Colaba was a great place to store coal, stack wood, make machine parts and build mills. <br>
+>>Then, in 1844, the Cotton Green (the open space where cotton was sold and bought) was shifted here and Colaba became the heart of commercial Mumbai.
+<br>
+    </p>
+
+    <style>
+      #header{
+  position: relative;
+  width: 150% ;
+  height: 100vh ;
+  background: url('images/colabathen.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+    </style>
+      <button class="button" onclick ="window.location.href ='http://127.0.0.1:5500/colabanow.html';"> Next >> </button>
+  
+  </section>
+
+  <script type="text/javascript">
+    const bg = document.getElementById('header');
+    window.addEventListener('scroll',function(){
+      bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+     
+    })
+  </script>
+</body>
+</html>

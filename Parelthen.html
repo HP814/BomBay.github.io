@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parel - Then</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2> Parel - Then</h2>
+    <p>
+      >> Originally, Parel was a separate island, one of the Seven Islands of Bombay. <br>
+      >> The Parel Relief or (Parel Shiva) is an important monolithic relief of the Hindu god Shiva in seven forms that is dated to the late Gupta period, in the 5th or 6th century AD by the ASI. <br>
+      >> It was found in Parel when a road was being constructed in 1931, and moved to the nearby Baradevi Temple, where it remains in worship, in its own room. <br>
+      >> The name Parel has its roots from the Parali Vaijanath Mahadev temple dedicated to Lord Shiva. <br>
+      >> An inscription dated 26 January 1187 (Paurnima of Magha, Saka 1108) is found there recording of a grant made by Shilahara king Aparaditya II out of the proceeds of an orchard in a village named Mahavali (close to Kurla) for a Vaidyanatha temple. <br>
+      >> In 1771 William Hornby, the Governor of Bombay, moved into the former friary, which became known as Government House, and a number of mills were subsequently established nearby. <br>
+      >> In 1883, the Governor's wife died of cholera in the house and two years later, the Governor's Mansion was moved to Malabar Point. <br>
+      >> During the plague epidemics of the 1890s, the old Government House was leased to the newly founded Haffkine Institute. <br>
+      >> It was a district in Girangaon, which was the focus of the Great Bombay textile strike of 1982.
+
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/parelthen.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button"  onclick ="window.location.href ='http://127.0.0.1:5500/Parelnow.html';" > Next >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazgaon - Then</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2>Mazgaon - Then</h2>
+    <p>
+     
+      >> The word Mazagaon has been derived from the Sanskrit Matsya gram, meaning fishing village. <br>
+      >> The original inhabitants were Agari (salt-workers) and Koli (fishermen) tribes. <br>
+      >> It is one of those places, where people from different religions and communities, have co-existed. <br> 
+      >> Mazgaon also stands for Majha gaon or my village. <br>
+      >> “There are several places in Mazgaon which are unique and most of us would miss them even if we pass by them daily,” The first Portuguese settlers were the Jesuits, who established a church in the 16th century. <br>
+      >> Notwithstanding their claim, in 1572, King Sebastian of Portugal granted the island in perpetuity to the de Souza e Lima family, from whom the D'Souzas of Mumbai trace their descent.
+
+
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/mazgaonthen.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button"  onclick ="window.location.href ='http://127.0.0.1:5500/mazgaonnow.html';" > Next >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>

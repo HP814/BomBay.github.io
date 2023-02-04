@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colaba-now</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2>Colaba - Now </h2>
+    <p>
+      >>It is one of the four peninsulas of Mumbai while the other three are Worli, Bandra and Malabar Hill. <br>
+      >>The Gateway of India, the art deco style Regal Theatre, the cafes (Café Mondegar, Cafe Royal and Leopold Cafe), and the Taj Mahal Palace & Tower, Royal Bombay Yacht Club, Bademiya Restaurant and Bagdadi restaurant, as well as a number of modern pubs, restaurants and clubs all add to the atmosphere. <br>
+      >>The southern tip is occupied by a military cantonment, including the large Navy Nagar layout built on reclaimed land known as Holiday Camp. <br>
+      >>The older parts of the cantonment retains its large, wooded spaces and is the only bit of green left in this otherwise congested area. <br> 
+      >>In the midst of Navy Nagar lies the Tata Institute of Fundamental Research (TIFR), one of India's leading scientific institutions. <br>
+      >>Colaba is renowned for high-end boutiques and imitation consumer goods, and is popular with tourists. <br>
+      >>Notable residents include Ratan Tata, Anil Ambani, and Ravi Shastri. <br>
+      >>Colaba Causeway, or just "Causeway" as it is known in Mumbai, offers everything from bracelets to perfumes to clothes to watches, clocks, DVDs and CDs. <br>
+      >>It has an old English charm and a very modern feel as well. <br>
+      >>Colaba is also the art centre of Mumbai, with all the major galleries and museums located in and around this area. Even today, in 2020, the government has managed to preserve most of its colonial-era architecture. <br>
+      >>Colaba is home to the Cooperage Football Ground.
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/colabanow.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button" href ="home.html"> Back to home >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>

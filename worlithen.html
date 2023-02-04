@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worli-Then</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2> Worli - Then</h2>
+    <p>
+     
+      >> Historic spellings include Warli, Worlee, Varli, and Varel. <br>
+      >> Originally Worli was a separate island, one of the Seven Islands of Bombay which were ceded by the Portuguese to England in 1661, it was linked up with the other islands in the 19th century. <br>
+      >> In the 1990s, a group of terrorists attacked a building in Worli as well as major buildings in the city.
+
+
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/worlithen.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button" onclick ="window.location.href ='http://127.0.0.1:5500/worlinow.html';"> Next >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>

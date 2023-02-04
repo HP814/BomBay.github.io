@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahim - Then</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2>Mahim - Then </h2>
+    <p>
+     
+      >> The name Mahim is derived from the ancient Mahikavati meaning "miraculous" in Sanskrit. <br>
+      >> Other historical names for the area include Mahimawati, Maijim, and Mejambu. <br>
+      >> Mahim was one of the seven islands that originally made up Mumbai.  <br>
+     >> Mahim, or Mahikavati as it was known, was the capital of Raja Bhimdev, who reigned over the region in the 13th century. <br>
+     >> He built a palace and a court of justice in Prabhadevi, as well as the first Babulnath temple. br
+     >> In 1343, this island was possessed by the Delhi Sultanate. It was in their reign that the old Mahim mosque was built. <br>
+     >> A dargah of Makhdoom Ali Mahimi was built here in 1431.In 1543, the Portuguese captured the islands of Mumbai. <br>
+     >> In 1662, these islands were given to the English King, King Charles II, as a part of the wedding dowry for the Portuguese princess, Catherine of Braganza. <br>
+     >> After the British acquired Mumbai, they built the Mahim Fort here to protect themselves from the Marathas. <br>
+     >> The causeway connecting Mahim and Bandra (corrupted from "Bunder" meaning port in Persian) was completed in 1845 at a cost of Rs. 1,57,000 donated entirely by Lady Avabai Jamsetjee Jeejeebhoy, wife of the first baronet Sir Jamsetjee Jeejebhoy with a stipulation that no toll would be charged to citizens for its use by the government.
+
+
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/Mahimthen.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button" onclick ="window.location.href ='http://127.0.0.1:5500/Mahimnow.html';"> Next >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazgaon - Now</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2>Mazgaon - Now </h2>
+    <p>
+     
+      >> Mazgaon is – on one side is the Wadibunder, Dongri and Sir JJ Hospital to Reay Road, Ghodapdeo, Jijamata Udyan or Byculla zoo stretch and Darukhana on the seafront. <br>
+      >> Starting off from the Our Lady or Rosery's Church, off the Dockyard Road suburban rrailway station on Harbour line, he takes you to the grand temple located on a hillock touching the Dockyard Road station itself, then to the market that ends just a few metres away from the main gate of the Mazgaon Dock Ltd and then to Koliwada. <br>
+
+      >> Then Mazgaon's Chinese temple, the Kwan Tai Shek temple, from where he takes you to some of the quietest roads of Mumbai. <br> 
+      >> He asks you to have a glimpse of the bungalow, where Bollywood actor of yesteryears, Kamini Kaushal, used to stay. <br>
+
+      >> Then a look at the Cross of the Gloria Church, the Bob's bungalow, which has a unique Spanish-style architecture. <br> 
+      >> The bungalow has unique stairs leading to the first floor.
+
+
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/mazgaonnow.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button"   onclick ="window.location.href ='home.html';" > Back to home >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>

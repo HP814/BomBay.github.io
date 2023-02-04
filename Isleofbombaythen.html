@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isle of Bombay - Then </title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2>Isle of Bombay - Then </h2>
+    <p>
+     
+     >> Isle of Bombay was one of the Seven Islands of Bombay, an archipelago of islands that were, in the eighteenth century, connected to form the area of the modern city of Bombay in India. <br> 
+     >> The island was the main harbour and the Base of the British from where the city expanded. <br>
+     >> The island stretched from Malabar Hill on the west to Dongri in the East where it formed a natural harbour. <br> 
+     >> To its north at the Malabar hill end lay the Island of Worli, while the Island of Mazgaon lay across a creek from the Dongri end. <br> 
+     >> The island of Colaba and the Old Woman's Island lay to the south of Bombay isle. <br>
+     >> In the eighteenth century, the isle was merged with its neighbouring land masses of Worli (in 1784 by the building of the Hornby Vellard) and with Colaba Island via the construction of the Colaba Causeway in 1838
+
+
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/Isleofbombaythen.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button"  onclick ="window.location.href ='http://127.0.0.1:5500/Isleofbombaynow.html';" > Next >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>

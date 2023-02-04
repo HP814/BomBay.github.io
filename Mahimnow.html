@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahim - Now </title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body>
+  <div id="header"></div>
+  <section>
+    <h2>Mahim - Now </h2>
+    <p>
+     
+      >> Mahim Bay is a large bay, part of the Arabian Sea in Mumbai, Maharashtra, India. <br>
+     >> The southern end is Worli, the northern end is Bandra Reclamation and Mahim is in the centre. <br>
+     >> Mahim Creek is a 15 feet (4.6 m) deep creek. The Mithi River drains into the creek which drains into the Mahim Bay. <br>
+     >> It forms the boundary between the city (Churchgate to Mahim)and suburbs (Bandra to Dahisar) of Mumbai. <br>
+     >> The creek is swamped by mangroves and has a mini-ecosystem. <br>
+     >> It now has the Bandra-Kurla complex with corporate offices on both its sides. <br>
+     >> The waters of the creek are foul smelling due to the dumping of untreated industrial effluents upstream. <br> In recent years, the mushrooming of slums around the waters has caused concern for the mangrove ecosystem, vital to the ecosystem of Mumbai. <br>
+     >> The Mahim Causeway is a vital link road connecting the neighbourhoods of Mahim in Mumbai City district to Bandra in Mumbai Suburban district.
+
+    </p>
+    <style>
+    #header{
+      position: relative;
+      width: 150% ;
+      height: 100vh ;
+      background: url('images/Mahimnow.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    </style>
+    <button class="button" onclick ="window.location.href ='home.html';" > Back to home >> </button>
+
+</section>
+
+<script type="text/javascript">
+  const bg = document.getElementById('header');
+  window.addEventListener('scroll',function(){
+    bg.style.backgroundSize = 160 - +window.pageYOffset/12 +'%' ;
+   
+  })
+</script>
+</body>
+</html>
